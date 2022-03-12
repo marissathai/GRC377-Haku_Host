@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 100;
+}
+
+.cardphoto img {
+  display: block;
+  max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+}
+
+/* make the Section class cards here.  */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+/* make the card flex. The default is row so change flex direction to vertical. */
+.card {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: center;
+  top: 500;
+}
+.card:hover {
+  transition: all 0.1s ease-in;
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cardphoto {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.cardarticle {
+  padding: 2.5rem;
+  flex-grow: 1;
+}
+
+/* typography */
+.cardH1 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card footer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+h3{
+    color:#444;
+}
+
+.card p {
+    color: grey;
+}
+
+nav{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	width: 500 px;
+	margin: 0 auto;
+	border-width: 3px 0;
+	text-align: center;
+	margin-top: 2em;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+nav li{
+	display: inline;
+}  
+
+nav a{
+	display: inline-block;
+	padding: 10px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover{
+	color: rgb(255, 255, 255);
+	background: rgb(182, 70, 70);
+}
